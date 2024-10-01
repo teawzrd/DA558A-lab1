@@ -11,6 +11,10 @@
 }
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: #35312E;
     font-size: 38px;
@@ -132,5 +136,8 @@ textarea {
     resize: none;
 }
 
-
+.footer {
+    display: flex;
+    
+}
 
