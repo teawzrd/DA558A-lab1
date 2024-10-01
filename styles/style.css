@@ -118,7 +118,19 @@ h2 {
     overflow: hidden;      /* hide the overflow */
 }
 
+.contact-container {
+    text-align: center;
+    background: #F7A0BD;
+    padding: 50px 100px;
+    margin-left: 300px;
+    margin-right: 300px
+    
+    
+}
 
+textarea {
+    resize: none;
+}
 
 
 
