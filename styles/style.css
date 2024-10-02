@@ -214,10 +214,69 @@ textarea {
     
 }
 
-.footer {
+footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FA9069;
+    
     
 }
+
+.footer-quick-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+.footer-link{
+    color:#FDECD8;
+    padding: 10px;
+    
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #FDECD8;
+  font-weight: 300;
+}
+
+.quick-link-titel {
+    color: #FDECD8;
+    font-family: "Manrope", sans-serif; 
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons a {
+
+    font-size: 24px; 
+    color: #FDECD8;
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    color:#35312E;
+}
+
 
 @media (max-width: 800px) {
     /*chnages the width to fit phone-screen*/
