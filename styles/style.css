@@ -318,13 +318,50 @@ article {
 
 .about {
     flex-direction: column;
-    margin-top: 50px;
-    margin-right: 10px;
+   /* margin-top: 50px;
+    margin-right: 10px;*/
+    text-align: center; 
 }
 
 .about-titel{
     color: #C293BC;
 }
+
+table {
+    text-align: center;
+    border-style: solid;
+    font-family: "Manrope", sans-serif;
+    color: #2c2724;
+    border-spacing: 0;
+    border-radius: 0,5px;
+    border-collapse: collapse; /*takes away the double lines in the middle of table*/
+    margin: 20px auto; 
+   
+}
+
+th, td{
+    padding: 15px;
+    border-style: solid;
+
+}
+
+th{
+    background-color: #C293BC;
+    border-style: solid;
+    border-color: #2c2724;
+
+}
+
+.right-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
     
 
 /*puts flex to column instead of row and some more adjustments*/
@@ -348,11 +385,18 @@ article {
         margin-top: 20px;
         padding: 0;
         align-self: center;
+        margin-bottom: 0;
         
     }
 
     p{
         font-size: 15px;
+    }
+
+    .right-about{
+        margin-top: 0;
+        padding: 0;
+        
     }
    
   
