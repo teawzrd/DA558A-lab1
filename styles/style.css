@@ -65,13 +65,7 @@ body {
     background-color: #FDECD8;
 }
 
-.profile-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  
-}
+
 
 h2 {
     color: #35312E;
@@ -249,12 +243,14 @@ footer {
     color:#FDECD8;
     padding: 10px;
     
+    
 }
 
 .footer-link:hover {
   text-decoration: underline;
   color: #FDECD8;
   font-weight: 300;
+  
 }
 
 .quick-link-titel {
@@ -300,6 +296,65 @@ so you can press them with your fingers on a phone screen*/
         padding-bottom: 15px;
         padding-top: 15px;
         
+} }
+
+
+/*---------------------ABOUT-------------------------------*/
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
+
+.profile-img {
+    width: 25%;
+    height: auto;
+    margin: 50px;
+    
+  }
+
+.about {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.about-titel{
+    color: #C293BC;
+}
+    
+
+/*puts flex to column instead of row and some more adjustments*/
+@media (max-width: 800px) {
+    
+    article{
+        flex-direction: column;
+       
+    }
+   
+    .about {
+        margin-top: 0;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .profile-img {
+        width: 70%; 
+        margin-top: 20px;
+        padding: 0;
+        align-self: center;
+        
+    }
+
+    p{
+        font-size: 15px;
+    }
+   
+  
+} 
+
 
 
