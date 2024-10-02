@@ -1,7 +1,7 @@
-/*@keyframes appear {
+@keyframes appear {
     from {
         opacity: 0;
-        transform: translate(0,10%);
+        transform: translate(-30vw);
     
     }
     to {
@@ -9,7 +9,11 @@
         transform: translate(0);
     }
 }
-*/
+
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -101,7 +105,7 @@ p {
     
     animation: appear 5s linear;
     animation-timeline: view(); /*gör så att animationen händer när bilderna är i viewn, alltså när man scrollar*/
-    animation-range: entry 0; /*börjar direkt så animationen är klar på typ halva skärmen*/*/
+    /*animation-range: entry 0; /*börjar direkt så animationen är klar på typ halva skärmen*/
 }
 
 .gallery-image:hover {
@@ -148,6 +152,8 @@ h2 {
     height: 3px;
     background-color: #C293BC;
     border-radius: 2px;
+    animation: appear 5s linear;
+    animation-duration: 1s;
 }
 
 /*h2 titel in contact reaches the line hr*/
