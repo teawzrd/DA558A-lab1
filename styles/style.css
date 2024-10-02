@@ -26,6 +26,7 @@ h1 {
 
 .container {
     text-align: center; /* Center content inside the container */
+    
 }
 
 ul {
@@ -113,27 +114,98 @@ h2 {
     color: #35312E;
     font-size: 30px;
     font-family: "Manrope", sans-serif;
+    margin-bottom: 0px;
 
-    
 }
+
 
 .img-wrapper {
     display: inline-block; /* change the default display type to inline-block */
     overflow: hidden;      /* hide the overflow */
 }
 
+
 .contact-container {
-    text-align: center;
-    background: #F7A0BD;
-    padding: 50px 100px;
-    margin-left: 300px;
-    margin-right: 300px
+   height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+/*hr line in contact*/
+.contact hr{
+    border: none;
+    width: 300px;
+    height: 3px;
+    background-color: #C293BC;
+    border-radius: 2px;
+}
+
+/*h2 titel in contact reaches the line hr*/
+.contact-titel h2{
+    border-bottom: 300px;
+}
+
+/*Affects all the input boxes in contacts*/
+.contact-input{
+    box-sizing: border-box;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 50px;
+
+    font-family: "Manrope", sans-serif;
+    color: #35312E;
     
+}
+
+.contact-input::placeholder{
+    color: #35312E;
+}
+
+.contact button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color:#FDECD8;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #F7A0BD;
+    transition: border 0.3s ease;
+
+}C293BC
+
+.contact button:hover{
+    border: 2px solid 35312E;
     
+}
+
+/*focus effect for input field*/
+.contact-input:focus{
+    border: 2px solid #F7A0BD;
+}
+
+/*The text-area box in contacts*/
+.contact textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
 }
 
 textarea {
     resize: none;
+    
 }
 
 .footer {
