@@ -214,6 +214,15 @@ textarea {
     
 }
 
+
+@media (max-width: 800px) {
+    /*chnages the width to fit phone-screen*/
+    .contact-input{
+        width: 80vw;
+    }
+}
+
+
 footer {
     display: flex;
     flex-direction: row;
@@ -277,11 +286,20 @@ footer {
     color:#35312E;
 }
 
-
+/*changes the social media icons to appear in a column and makes them bigger 
+so you can press them with your fingers on a phone screen*/
 @media (max-width: 800px) {
-    /*chnages the width to fit phone-screen*/
-    .contact-input{
-        width: 80vw;
+    
+    .footer{
+        flex-direction: column;
     }
+    .social-media-icons{
+        flex-direction: column;
+    }
+    .social-media-icons a {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        
 }
+
 
