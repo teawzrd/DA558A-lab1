@@ -182,12 +182,12 @@ h2 {
     border: none;
     border-radius: 50px;
     background-color: #F7A0BD;
-    transition: border 0.3s ease;
-
-}C293BC
+    transition: background-color 0.3s ease;
+}
 
 .contact button:hover{
-    border: 2px solid 35312E;
+    background-color:#C293BC;
+   
     
 }
 
@@ -211,5 +211,12 @@ textarea {
 .footer {
     display: flex;
     
+}
+
+@media (max-width: 800px) {
+    /*chnages the width to fit phone-screen*/
+    .contact-input{
+        width: 80vw;
+    }
 }
 
