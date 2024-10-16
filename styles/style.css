@@ -239,7 +239,7 @@ footer {
 
 .footer-quick-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 0;
     padding-bottom: 0;
     
